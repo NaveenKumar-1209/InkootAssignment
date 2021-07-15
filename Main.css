@@ -1,0 +1,201 @@
+*{
+    font-family: 'Trocchi', serif;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    
+}
+.checkbtn{
+    font-size:30px;
+    color:#cf0c0c;
+    margin:40px 12px;
+    position:absolute;
+    z-index:10;
+    display:none;
+    cursor:pointer ;
+}
+
+#check{
+    position:absolute;
+    display:none;
+}
+
+.fa-bars{
+    display:block;
+}
+.fa-cart-plus{
+    visibility: hidden;
+}
+
+.Main{
+    position:relative;
+    display:flex;
+    background-image: linear-gradient(#edf2ef, #fff);
+}
+.leftSide{
+    width:200px;
+    padding:50px;
+}
+.logo h1{
+    font-weight: 900;
+}
+.MobileLogo h3{
+    display:none;
+}
+.Navbar ul{
+    list-style: none;
+}
+.Navbar ul li{
+    padding-top:40px;
+}
+.Navbar li a{
+    color:#888a89;
+}
+.Navbar li #Active{
+    text-decoration:line-through 2px red;
+}
+#Cart a{
+    background-color: #cf0c0c;
+    color:#fff;
+    padding:15px 45px;
+    border-radius: 25px;
+}
+
+/*----Logo and Navbar style Ends---*/
+
+.rightSide{
+    margin:100px 50px;
+}
+.OnlyText{
+    display:flex;
+    
+}
+.Header h1{
+    font-size: 4em;
+    width:500px;
+    margin-left:30px;
+}
+.LoremText p{
+    width:180px;
+    color:#888a89;
+    margin:23px 150px;
+}
+.menu ul{
+    list-style: none;
+    display:flex;
+    margin-top:85px;
+}
+.menu ul li{
+    margin:14px;
+    border-radius: 20px;
+    width:175px;
+    height:200px;
+    box-shadow: 0 26px 32px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.19);
+    transition:100ms;
+}
+.menu ul a h5{
+    color:#000;
+    margin:-27px 25px;
+    text-align: center;
+}
+.menu ul li img{
+    width:167px;
+    height:184px;
+    clip-path:circle(33% at 50% 50%);  
+}
+
+@media (max-width:360px){
+    .Main{
+        position:relative;
+    }
+    .checkbtn{
+        display:block;
+    }
+    /* #BarIcon{
+        visibility:visible;
+        opacity:1;
+        z-index: 10;
+    }
+    #BarIcon:hover, #BarIcon:focus{
+        background-color: #000;
+        cursor: pointer;
+    } */
+    .logo h1{
+        visibility:hidden;
+        opacity:0;
+    }
+    .MobileLogo h3{
+        display:block;
+        margin:-85px 47px;
+        font-size:2em;
+    }
+    .Navbar ul{
+        display:block;
+        background-color: #000;
+        left:-100%;
+        top:0%;
+        width:100%;
+        height:100vh;
+        position:absolute;
+        z-index: 5;
+        transition:500ms;
+    }
+    .Navbar ul li{
+        padding-top:50px;
+        text-align: center;
+    }
+    .rightSide{
+        margin:100px 40px;
+    }
+    .Header h1{
+        font-size: 2em;
+        width:80vw;
+        margin-left:-230px;
+    }
+    .menu ul{
+        list-style: none;
+        display:grid;
+        grid-template-columns: auto auto;
+        width:90vw;
+        margin:30px -241px;
+        position:absolute;
+    }
+    .menu ul li{
+        display:block;
+        margin:12px 20px;
+        width:120px;
+        height:145px;
+    }
+    .menu ul li:nth-child(1), .menu ul li:nth-child(2) {
+        display:flex;
+    }
+    .menu ul li img{
+        width:122px;
+        height:133px;
+        clip-path:circle(33% at 50% 46%);  
+    }
+    .menu ul a h5{
+        color:#000;
+        margin:-28px 10px;
+        text-align: center;
+    }
+    .fa-cart-plus{
+        font-size:1.5em;
+        margin:8vh -38vw;
+        color: #cf0c0c;
+        visibility:visible;
+        float:right;
+        cursor:pointer;
+    }
+    .LoremText p{
+        position:absolute;
+        width:90vw;
+        margin:631px -262px;
+        padding-bottom:45px;
+    }
+    #check:checked ~ .leftSide .Navbar ul{
+        left:0%;
+    }
+    
+}

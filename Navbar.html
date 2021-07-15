@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/be90d88fdd.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+      .Main ul{
+          display:none;
+      }
+      #check:checked ~ .Navbar ul{
+          display:block;
+      }
+  </style>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="Main">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="Navbar">
+        <ul>
+            <li><a id="Active" href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Cuisine</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Book</a></li>
+            <li id="Cart"><a href="#">Cart</a></li>
+        </ul>
+    </div>
+    </div>
+    </body>
